@@ -3,3 +3,4 @@ La idea de la página es de suscripciones a un torneo de futbol 8, cuenta con lo
 /app/elegir/estadio/
 /app/registrar/jugador/
 Luego para la búsqueda en la base de datos se filtran por nombre de estadios en los que se encuentran: Maracana,Monumental, Bombonera y Chacarita.
+La plantilla la saqué de la página que estaba en la diapositiva free-css.com, no la pude personalizar con imagenes y textos de futbol ya que todavía me cuesta un poco esa parte.
