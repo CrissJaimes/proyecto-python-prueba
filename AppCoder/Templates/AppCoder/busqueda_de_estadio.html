@@ -1,0 +1,24 @@
+{% extends 'AppCoder/base.html' %}
+
+
+
+{% block contenidoQueCambia %}
+<form  method="get">
+    <br><br>
+    <p>
+        Nombre del Estadio: <input type="text" name="nombre">
+    </p>
+
+    <input type="submit" value="Buscar Estadio">
+
+</form>
+<br>
+{% if listado_estadios %}
+<ul>
+    {% for estadio in listado_estadios %}
+    <li style="font-size: 30px;">{{estadio.nombre }} {{ estadio.ubicacion }} {{ estadio.capacidad}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

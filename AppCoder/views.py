@@ -43,3 +43,10 @@ def registrar_jugador(request):
 
 
     return render(request, "AppCoder/registrar_jugador.html")
+
+
+def buscar_estadio(request):
+    if request.GET:
+        estadio = Estadio.objects.filter(nombre__icontains=request.GET["nombre"])
+        return render(request, "AppCoder/busqueda_de_estadio.html", {"listado_estadios": estadio})
+    return render(request, "AppCoder/busqueda_de_estadio.html", {"listado_estadios": []})
