@@ -1,0 +1,36 @@
+{% extends 'AppCoder/base.html' %}
+
+
+
+{% block contenidoQueCambia %}
+<br><br>
+<h1>Torneo Futbol 8</h1>
+
+<br><br>
+<form action="" method="post">
+    {% csrf_token %}
+
+    <p>Nombre del Estadio
+
+        <input type="text" name="nombre">
+
+    </p>
+<br>
+    <p>
+        Ubicacion del Estadio
+        <input type="text" name="ubicacion" >
+
+    </p>
+<br>
+    <p>
+        Capacidad del Estadio 
+
+        <input type="number" name="Capacidad">
+    </p>
+<br>
+    <input type="submit" value="Reservar Estadio">
+
+</form>
+
+
+{% endblock %}
